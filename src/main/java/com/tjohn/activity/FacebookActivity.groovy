@@ -1,16 +1,16 @@
-package com.example.robolectric
+package com.tjohn.activity
 
 import android.app.Activity
 import android.os.Bundle
-import com.example.R
+import com.tjohn.R
 import groovy.transform.CompileStatic;
 
 @CompileStatic
-public class DeckardActivity extends Activity {
+public class FacebookActivity extends Activity {
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.deckard)
+    setContentView(R.layout.facebook)
   }
 }

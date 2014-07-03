@@ -1,23 +1,21 @@
-package com.example.activity
+package com.tjohn.activity
 
 import android.widget.TextView
-import com.example.R
-import com.example.robolectric.DeckardActivity
+import com.tjohn.R
 import groovy.transform.CompileStatic
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
-import org.robolectric.annotation.Config
 
 import static org.fest.assertions.api.ANDROID.assertThat
 
 @CompileStatic
 @RunWith(RobolectricTestRunner.class)
-class DeckardActivityTest {
+class FacebookActivityTest {
   @Test
   public void someTest() {
-    def activity = Robolectric.setupActivity(DeckardActivity.class)
+    def activity = Robolectric.setupActivity(FacebookActivity.class)
     assertThat((TextView) activity.findViewById(R.id.text)).hasText("Hello Groovy!")
   }
 }
